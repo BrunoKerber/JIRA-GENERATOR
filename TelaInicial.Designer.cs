@@ -75,8 +75,9 @@
             this.manutençãoToolStripMenuItem,
             this.liberaçãoToolStripMenuItem,
             this.melhoriaToolStripMenuItem});
+            this.novoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripMenuItem.Image")));
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             // 
             // manutençãoToolStripMenuItem
@@ -84,49 +85,54 @@
             this.manutençãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pEPToolStripMenuItem,
             this.rMToolStripMenuItem});
+            this.manutençãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("manutençãoToolStripMenuItem.Image")));
             this.manutençãoToolStripMenuItem.Name = "manutençãoToolStripMenuItem";
-            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manutençãoToolStripMenuItem.Text = "Manutenção";
             // 
             // pEPToolStripMenuItem
             // 
             this.pEPToolStripMenuItem.Name = "pEPToolStripMenuItem";
-            this.pEPToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.pEPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pEPToolStripMenuItem.Text = "PEP";
             this.pEPToolStripMenuItem.Click += new System.EventHandler(this.pEPToolStripMenuItem_Click);
             // 
             // rMToolStripMenuItem
             // 
             this.rMToolStripMenuItem.Name = "rMToolStripMenuItem";
-            this.rMToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.rMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rMToolStripMenuItem.Text = "RM";
             this.rMToolStripMenuItem.Click += new System.EventHandler(this.rMToolStripMenuItem_Click);
             // 
             // liberaçãoToolStripMenuItem
             // 
+            this.liberaçãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("liberaçãoToolStripMenuItem.Image")));
             this.liberaçãoToolStripMenuItem.Name = "liberaçãoToolStripMenuItem";
-            this.liberaçãoToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.liberaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.liberaçãoToolStripMenuItem.Text = "Liberação";
             this.liberaçãoToolStripMenuItem.Click += new System.EventHandler(this.liberaçãoToolStripMenuItem_Click);
             // 
             // melhoriaToolStripMenuItem
             // 
+            this.melhoriaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("melhoriaToolStripMenuItem.Image")));
             this.melhoriaToolStripMenuItem.Name = "melhoriaToolStripMenuItem";
-            this.melhoriaToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.melhoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.melhoriaToolStripMenuItem.Text = "Melhoria";
             this.melhoriaToolStripMenuItem.Click += new System.EventHandler(this.melhoriaToolStripMenuItem_Click);
             // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Enabled = false;
+            this.abrirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("abrirToolStripMenuItem.Image")));
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             // 
             // sairToolStripMenuItem
             // 
+            this.sairToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sairToolStripMenuItem.Image")));
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
