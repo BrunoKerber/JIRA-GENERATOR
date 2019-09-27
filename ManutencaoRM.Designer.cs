@@ -41,6 +41,7 @@
             this.Name = "ManutencaoRM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relato de Problema (RM)";
+            this.Load += new System.EventHandler(this.ManutencaoRM_Load);
             this.ResumeLayout(false);
 
         }

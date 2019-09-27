@@ -40,6 +40,7 @@
             this.Name = "Melhoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Abertura de Melhoria";
+            this.Load += new System.EventHandler(this.Melhoria_Load);
             this.ResumeLayout(false);
 
         }

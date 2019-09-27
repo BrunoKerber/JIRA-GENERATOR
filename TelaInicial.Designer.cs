@@ -92,6 +92,7 @@
             // 
             // pEPToolStripMenuItem
             // 
+            this.pEPToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pEPToolStripMenuItem.Image")));
             this.pEPToolStripMenuItem.Name = "pEPToolStripMenuItem";
             this.pEPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pEPToolStripMenuItem.Text = "PEP";
@@ -99,6 +100,7 @@
             // 
             // rMToolStripMenuItem
             // 
+            this.rMToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("rMToolStripMenuItem.Image")));
             this.rMToolStripMenuItem.Name = "rMToolStripMenuItem";
             this.rMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rMToolStripMenuItem.Text = "RM";

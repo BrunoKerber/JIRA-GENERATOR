@@ -41,6 +41,7 @@
             this.Name = "ManutencaoPEP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relato de Problema (PEP)";
+            this.Load += new System.EventHandler(this.ManutencaoPEP_Load);
             this.ResumeLayout(false);
 
         }

@@ -41,6 +41,7 @@
             this.Name = "LiberacaoIssue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Liberação de Issue";
+            this.Load += new System.EventHandler(this.LiberacaoIssue_Load);
             this.ResumeLayout(false);
 
         }
