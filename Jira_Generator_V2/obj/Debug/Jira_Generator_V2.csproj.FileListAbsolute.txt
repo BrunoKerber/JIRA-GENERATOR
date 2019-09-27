@@ -1,0 +1,13 @@
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\bin\Debug\Jira_Generator_V2.exe.config
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\bin\Debug\Jira_Generator_V2.exe
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\bin\Debug\Jira_Generator_V2.pdb
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.csprojAssemblyReference.cache
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.ManutencaoPEP.resources
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.ManutencaoRM.resources
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.Properties.Resources.resources
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.TelaInicial.resources
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.csproj.GenerateResource.cache
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.exe
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.pdb
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.LiberacaoIssue.resources
+C:\PROJETO JIRA GENERATOR\Jira_Generator_V2\obj\Debug\Jira_Generator_V2.Melhoria.resources
