@@ -29,7 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManutencaoPEP));
+            this.btnCopiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnCopiar
+            // 
+            this.btnCopiar.BackColor = System.Drawing.Color.White;
+            this.btnCopiar.Location = new System.Drawing.Point(327, 506);
+            this.btnCopiar.Name = "btnCopiar";
+            this.btnCopiar.Size = new System.Drawing.Size(116, 23);
+            this.btnCopiar.TabIndex = 0;
+            this.btnCopiar.Text = "COPIAR";
+            this.btnCopiar.UseVisualStyleBackColor = false;
+            this.btnCopiar.Click += new System.EventHandler(this.btnCopiar_Click);
             // 
             // ManutencaoPEP
             // 
@@ -37,6 +49,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(764, 541);
+            this.Controls.Add(this.btnCopiar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManutencaoPEP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -47,5 +60,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCopiar;
     }
 }

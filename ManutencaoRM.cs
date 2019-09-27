@@ -13,6 +13,7 @@ namespace Jira_Generator_V2
 {
     public partial class ManutencaoRM : Form
     {
+        string text = File.ReadAllText(@"C:\Modelos Jira Generator\2 - Modelo Abertura de TicketRM.txt", Encoding.UTF8);
         public ManutencaoRM()
         {
             InitializeComponent();
@@ -20,7 +21,12 @@ namespace Jira_Generator_V2
 
         private void ManutencaoRM_Load(object sender, EventArgs e)
         {
-            string text = File.ReadAllText(@"C:\Modelos Jira Generator\2 - Modelo Abertura de TicketRM.txt", Encoding.UTF8);
+            //string text = File.ReadAllText(@"C:\Modelos Jira Generator\2 - Modelo Abertura de TicketRM.txt", Encoding.UTF8);
+        }
+
+        private void btnCopiar_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(text);
         }
     }
 }

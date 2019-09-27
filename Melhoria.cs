@@ -13,6 +13,7 @@ namespace Jira_Generator_V2
 {
     public partial class Melhoria : Form
     {
+        string text = File.ReadAllText(@"C:\Modelos Jira Generator\4 - Modelo Abertura de Melhoria.txt", Encoding.UTF8);
         public Melhoria()
         {
             InitializeComponent();
@@ -20,7 +21,12 @@ namespace Jira_Generator_V2
 
         private void Melhoria_Load(object sender, EventArgs e)
         {
-            string text = File.ReadAllText(@"C:\Modelos Jira Generator\4 - Modelo Abertura de Melhoria.txt", Encoding.UTF8);
+            //string text = File.ReadAllText(@"C:\Modelos Jira Generator\4 - Modelo Abertura de Melhoria.txt", Encoding.UTF8);
+        }
+
+        private void btnCopiar_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(text);
         }
     }
 }
