@@ -21,7 +21,7 @@ namespace Jira_Generator_V2
 
         private void LiberacaoIssue_Load(object sender, EventArgs e)
         {
-           // string text = File.ReadAllText(@"C:\Modelos Jira Generator\3 - Modelo Liberação de Issue.txt", Encoding.UTF8);
+           
         }
 
         private void btnCopiar_Click(object sender, EventArgs e)

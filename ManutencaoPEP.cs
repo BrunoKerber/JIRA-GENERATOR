@@ -22,7 +22,7 @@ namespace Jira_Generator_V2
 
         private void ManutencaoPEP_Load(object sender, EventArgs e)
         {
-         //   string text = File.ReadAllText(@"C:\Modelos Jira Generator\1 - Modelo Abertura de TicketPEP.txt", Encoding.UTF8);
+         
         }
 
         private void btnCopiar_Click(object sender, EventArgs e)
