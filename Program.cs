@@ -16,7 +16,11 @@ namespace Jira_Generator_V2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaInicial());
+            // Abertura tela Inicial
+               Application.Run(new TelaInicial());
+
+            // Abertura tela de Login
+           // Application.Run(new LoginJiraTest());
         }
     }
 }
