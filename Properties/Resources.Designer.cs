@@ -59,15 +59,5 @@ namespace Jira_Generator_V2.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap backgroud01 {
-            get {
-                object obj = ResourceManager.GetObject("backgroud01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

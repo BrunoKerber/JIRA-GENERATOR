@@ -36,7 +36,7 @@ namespace Jira_Generator_V2
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("Versão 2.1 | 27/09/2019 |" + " Desenvolvido por: BRUNO KERBER PINHEIRO",
+            MessageBox.Show("Versão 2.1 | 30/09/2019 |" + " Desenvolvido por: BRUNO KERBER PINHEIRO",
             "Informação",
             MessageBoxButtons.OK,
             MessageBoxIcon.Information,
