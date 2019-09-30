@@ -13,11 +13,19 @@ namespace Jira_Generator_V2
 {
     public partial class ManutencaoPEP : Form
     {
-        string text = File.ReadAllText(@"C:\Modelos Jira Generator\1 - Modelo Abertura de TicketPEP.txt", Encoding.UTF8);
+        private readonly string baseText;
 
         public ManutencaoPEP()
         {
             InitializeComponent();
+            cmbProduto.SelectedIndex = 0;
+            cmbVersao.SelectedIndex = 0;
+            cmbResolucao.SelectedIndex = 0;
+            cmbSO.SelectedIndex = 0;
+            cmbBanco.SelectedIndex = 0;
+            txtUsuario.Text = "mestre";
+            txtSenha.Text = "totvs";
+            baseText = File.ReadAllText(@"C:\Modelos Jira Generator\1 - Modelo Abertura de TicketPEP.txt", Encoding.UTF8);
         }
 
         private void ManutencaoPEP_Load(object sender, EventArgs e)
@@ -27,7 +35,44 @@ namespace Jira_Generator_V2
 
         private void btnCopiar_Click(object sender, EventArgs e)
         {
+            string usuario, senha, nm_banco, nm_server, versao, produto, banco, descr_problema, mensagem_erro, so, resolucao, reproducao, hora, data;
+
+            banco = cmbBanco.Text;
+            produto = cmbProduto.Text;
+            so = cmbSO.Text;
+            resolucao = cmbResolucao.Text;
+            descr_problema = txtDescrProblema.Text;
+            mensagem_erro = txtMensagemErro.Text;
+            usuario = txtUsuario.Text;
+            senha = txtSenha.Text;
+            nm_banco = txtNomeBanco.Text;
+            nm_server = txtServidor.Text;
+            versao = cmbVersao.Text;
+            reproducao = txtReproducao.Text;
+            hora = DateTime.Now.ToShortTimeString();
+            data = DateTime.Now.ToShortDateString();
+
+            var text = baseText.Replace("[VERSAO]", versao)
+            .Replace("[PRODUTO]", produto)
+            .Replace("[BANCO]", banco)
+            .Replace("[SO]", so)
+            .Replace("[RESOLUCAO]", resolucao)
+            .Replace("[PROBLEMA]", descr_problema)
+            .Replace("[MSGERRO]", mensagem_erro)
+            .Replace("[REPRODUCAO]", reproducao)
+            .Replace("[USUARIO]", usuario)
+            .Replace("[SENHA]", senha)
+            .Replace("[NOMEBANCO]", nm_banco)
+            .Replace("[DATA]", data)
+            .Replace("[HORA]", hora)
+            .Replace("[SERVIDOR]", nm_server);
+
             Clipboard.SetText(text);
+        }
+
+        private void cmbProduto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
