@@ -66,5 +66,50 @@ namespace Jira_Generator_V2
             Melhoria PEPRM = new Melhoria();
             PEPRM.ShowDialog();
         }
+
+        private void ferramentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aluraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://cursos.alura.com.br/loginForm?urlAfterLogin=https://cursos.alura.com.br/dashboard");
+        }
+
+        private void tDNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://tdn.totvs.com/display/F1/Porto+Alegre");
+        }
+
+        private void jiraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://jiraproducao.totvs.com.br");
+        }
+
+        private void ambientesGCADToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://10.51.3.41:8080/apex/f?p=104:10:5823557676588::NO:::");
+        }
+
+        private void jenkinsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://poajenkhml01:8080/jenkins/");
+        }
+
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://bh-testflow.bh01.local/testflow/dashboard");
+        }
+
+        private void agendamentoAluraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://engenharia.bh01.local/alura/#/login");
+        }
+
+        private void calendárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://calendar.google.com");
+        }
     }
 }
