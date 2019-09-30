@@ -51,6 +51,7 @@
             this.ClientSize = new System.Drawing.Size(764, 541);
             this.Controls.Add(this.btnCopiar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ManutencaoPEP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relato de Problema (PEP)";
