@@ -25,12 +25,24 @@ namespace Jira_Generator_V2
             cmbBanco.SelectedIndex = 0;
             txtUsuario.Text = "mestre";
             txtSenha.Text = "totvs";
-            baseText = File.ReadAllText(@"C:\Modelos Jira Generator\1 - Modelo Abertura de TicketPEP.txt", Encoding.UTF8);
+
+            try
+            {
+                baseText = File.ReadAllText(@"C:\Modelos Jira Generator\1 - Modelo Abertura de TicketPEP.txt", Encoding.UTF8);
+            }
+            catch (System.IO.DirectoryNotFoundException)
+            {
+                MessageBox.Show("O arquivo modelo não está em um diretório válido!",
+                "ERRO",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error,
+                MessageBoxDefaultButton.Button1);
+            }
         }
 
         private void ManutencaoPEP_Load(object sender, EventArgs e)
         {
-         
+
         }
 
         private void btnCopiar_Click(object sender, EventArgs e)
@@ -71,6 +83,11 @@ namespace Jira_Generator_V2
         }
 
         private void cmbProduto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescrProblema_TextChanged(object sender, EventArgs e)
         {
 
         }

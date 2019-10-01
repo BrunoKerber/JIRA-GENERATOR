@@ -13,6 +13,8 @@ namespace Jira_Generator_V2
 {
     public partial class ManutencaoRM : Form
     {
+
+
         string text = File.ReadAllText(@"C:\Modelos Jira Generator\2 - Modelo Abertura de TicketRM.txt", Encoding.UTF8);
         public ManutencaoRM()
         {

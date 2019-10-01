@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manutençãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +39,8 @@
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ferramentasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pSRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ferramentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jiraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ambientesGCADToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,22 +51,10 @@
             this.agendamentoAluraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aluraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.kanoahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arquivoToolStripMenuItem,
-            this.cadastrosToolStripMenuItem,
-            this.ferramentasToolStripMenuItem,
-            this.sobreToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(764, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // arquivoToolStripMenuItem
             // 
@@ -153,12 +142,29 @@
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
+            // ferramentasToolStripMenuItem1
+            // 
+            this.ferramentasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pSRToolStripMenuItem});
+            this.ferramentasToolStripMenuItem1.Name = "ferramentasToolStripMenuItem1";
+            this.ferramentasToolStripMenuItem1.Size = new System.Drawing.Size(84, 20);
+            this.ferramentasToolStripMenuItem1.Text = "Ferramentas";
+            // 
+            // pSRToolStripMenuItem
+            // 
+            this.pSRToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pSRToolStripMenuItem.Image")));
+            this.pSRToolStripMenuItem.Name = "pSRToolStripMenuItem";
+            this.pSRToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pSRToolStripMenuItem.Text = "PSR";
+            this.pSRToolStripMenuItem.Click += new System.EventHandler(this.pSRToolStripMenuItem_Click);
+            // 
             // ferramentasToolStripMenuItem
             // 
             this.ferramentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jiraToolStripMenuItem,
             this.ambientesGCADToolStripMenuItem,
             this.jenkinsToolStripMenuItem,
+            this.kanoahToolStripMenuItem,
             this.calendárioToolStripMenuItem,
             this.tDNToolStripMenuItem,
             this.testToolStripMenuItem,
@@ -240,6 +246,29 @@
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arquivoToolStripMenuItem,
+            this.cadastrosToolStripMenuItem,
+            this.ferramentasToolStripMenuItem1,
+            this.ferramentasToolStripMenuItem,
+            this.sobreToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(764, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // kanoahToolStripMenuItem
+            // 
+            this.kanoahToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kanoahToolStripMenuItem.Image")));
+            this.kanoahToolStripMenuItem.Name = "kanoahToolStripMenuItem";
+            this.kanoahToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.kanoahToolStripMenuItem.Text = "Kanoah";
+            this.kanoahToolStripMenuItem.Click += new System.EventHandler(this.kanoahToolStripMenuItem_Click);
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,7 +295,6 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manutençãoToolStripMenuItem;
@@ -277,16 +305,20 @@
         private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pSRToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aluraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jiraToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem jenkinsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ambientesGCADToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tDNToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agendamentoAluraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jenkinsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calendárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tDNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agendamentoAluraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aluraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem kanoahToolStripMenuItem;
     }
 }
 

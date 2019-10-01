@@ -111,5 +111,20 @@ namespace Jira_Generator_V2
         {
             System.Diagnostics.Process.Start("http://calendar.google.com");
         }
+
+        private void pSRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("psr.exe");
+        }
+
+        private void bDEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void kanoahToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://jiraproducao.totvs.com.br/secure/Tests.jspa#");
+        }
     }
 }
