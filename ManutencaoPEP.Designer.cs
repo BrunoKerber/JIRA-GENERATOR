@@ -169,7 +169,6 @@
             this.txtDescrProblema.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDescrProblema.Size = new System.Drawing.Size(513, 90);
             this.txtDescrProblema.TabIndex = 42;
-            this.txtDescrProblema.TextChanged += new System.EventHandler(this.txtDescrProblema_TextChanged);
             // 
             // txtNomeBanco
             // 
@@ -289,7 +288,6 @@
             this.cmbProduto.Name = "cmbProduto";
             this.cmbProduto.Size = new System.Drawing.Size(134, 21);
             this.cmbProduto.TabIndex = 33;
-            this.cmbProduto.SelectedIndexChanged += new System.EventHandler(this.cmbProduto_SelectedIndexChanged);
             // 
             // lblProduto
             // 
