@@ -19,9 +19,9 @@ namespace Jira_Generator_V2
             InitializeComponent();
             cmbProduto.SelectedIndex = 0;
             cmbVersao.SelectedIndex = 0;
-            cmbResolucao.SelectedIndex = 0;
-            cmbSO.SelectedIndex = 0;
             cmbBanco.SelectedIndex = 0;
+            cmbResolucao.SelectedIndex = 5;
+            cmbSO.SelectedIndex = 3;
             txtUsuario.Text = "mestre";
             txtSenha.Text = "totvs";
 
@@ -46,36 +46,38 @@ namespace Jira_Generator_V2
 
         private void btnCopiar_Click(object sender, EventArgs e)
         {
-            string usuario, senha, nm_banco, nm_server, versao, produto, banco, descr_problema, mensagem_erro, so, resolucao, reproducao, hora, data;
+            string usuario, senha, nm_banco, nm_server, versao, produto, banco, descr_problema, mensagem_erro, so, resolucao, reproducao, hora, data, conclusao, testerealizado, observacao;
 
             banco = cmbBanco.Text;
-            produto = cmbProduto.Text;
             so = cmbSO.Text;
             resolucao = cmbResolucao.Text;
-            descr_problema = txtDescrProblema.Text;
-            mensagem_erro = txtMensagemErro.Text;
+            produto = cmbProduto.Text;
+            descr_problema = txtConclusao.Text;
+            conclusao = txtConclusao.Text;
             usuario = txtUsuario.Text;
             senha = txtSenha.Text;
             nm_banco = txtNomeBanco.Text;
             nm_server = txtServidor.Text;
             versao = cmbVersao.Text;
-            reproducao = txtReproducao.Text;
+            testerealizado = txtTesteRealizado.Text;
+            observacao = txtObservacao.Text;
             hora = DateTime.Now.ToShortTimeString();
             data = DateTime.Now.ToShortDateString();
 
             var text = baseText.Replace("[VERSAO]", versao)
             .Replace("[PRODUTO]", produto)
             .Replace("[BANCO]", banco)
-            .Replace("[SO]", so)
             .Replace("[RESOLUCAO]", resolucao)
             .Replace("[PROBLEMA]", descr_problema)
-            .Replace("[MSGERRO]", mensagem_erro)
-            .Replace("[REPRODUCAO]", reproducao)
+            .Replace("[CONCLUSAO]", conclusao)
+            .Replace("[TESTEREALIZADO]", testerealizado)
             .Replace("[USUARIO]", usuario)
             .Replace("[SENHA]", senha)
+            .Replace("[SO]", so)
             .Replace("[NOMEBANCO]", nm_banco)
             .Replace("[DATA]", data)
             .Replace("[HORA]", hora)
+            .Replace("[OBSERVACAO]", observacao)
             .Replace("[SERVIDOR]", nm_server);
 
             Clipboard.SetText(text);

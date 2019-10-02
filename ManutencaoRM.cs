@@ -19,9 +19,7 @@ namespace Jira_Generator_V2
         {
             InitializeComponent();
             cmbProduto.SelectedIndex = 0;
-            cmbVersao.SelectedIndex = 0;
-            cmbResolucao.SelectedIndex = 0;
-            cmbSO.SelectedIndex = 0;
+            cmbVersao.SelectedIndex = 4;
             cmbBanco.SelectedIndex = 0;
             txtUsuario.Text = "mestre";
             txtSenha.Text = "totvs";
@@ -47,13 +45,14 @@ namespace Jira_Generator_V2
 
         private void btnCopiar_Click(object sender, EventArgs e)
         {
-            string usuario, senha, nm_banco, nm_server, versao, produto, banco, descr_problema, mensagem_erro, so, resolucao, reproducao, hora, data;
+            string usuario, senha, nm_banco, nm_server, versao, produto, banco, descr_problema, mensagem_erro, biblioteca, coligada, reproducao, hora, data, parametrizacao;
 
             banco = cmbBanco.Text;
             produto = cmbProduto.Text;
-            so = cmbSO.Text;
-            resolucao = cmbResolucao.Text;
+            biblioteca = txtBiblioteca.Text;
+            coligada = txtColigada.Text;
             descr_problema = txtDescrProblema.Text;
+            parametrizacao = txtParametrizacao.Text;
             mensagem_erro = txtMensagemErro.Text;
             usuario = txtUsuario.Text;
             senha = txtSenha.Text;
@@ -67,9 +66,10 @@ namespace Jira_Generator_V2
             var textrm = baseText.Replace("[VERSAO]", versao)
             .Replace("[PRODUTO]", produto)
             .Replace("[BANCO]", banco)
-            .Replace("[SO]", so)
-            .Replace("[RESOLUCAO]", resolucao)
+            .Replace("[BIBLIOTECA]", biblioteca)
+            .Replace("[COLIGADA]", coligada)
             .Replace("[PROBLEMA]", descr_problema)
+            .Replace("[PARAMETRIZACAO]", parametrizacao)
             .Replace("[MSGERRO]", mensagem_erro)
             .Replace("[REPRODUCAO]", reproducao)
             .Replace("[USUARIO]", usuario)

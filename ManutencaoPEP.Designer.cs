@@ -59,10 +59,10 @@
             // btnCopiar
             // 
             this.btnCopiar.BackColor = System.Drawing.Color.White;
-            this.btnCopiar.Location = new System.Drawing.Point(327, 506);
+            this.btnCopiar.Location = new System.Drawing.Point(304, 506);
             this.btnCopiar.Name = "btnCopiar";
             this.btnCopiar.Size = new System.Drawing.Size(116, 23);
-            this.btnCopiar.TabIndex = 0;
+            this.btnCopiar.TabIndex = 13;
             this.btnCopiar.Text = "COPIAR";
             this.btnCopiar.UseVisualStyleBackColor = false;
             this.btnCopiar.Click += new System.EventHandler(this.btnCopiar_Click);
@@ -83,7 +83,7 @@
             this.txtReproducao.Name = "txtReproducao";
             this.txtReproducao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtReproducao.Size = new System.Drawing.Size(513, 91);
-            this.txtReproducao.TabIndex = 45;
+            this.txtReproducao.TabIndex = 12;
             // 
             // cmbResolucao
             // 
@@ -98,7 +98,7 @@
             this.cmbResolucao.Location = new System.Drawing.Point(193, 90);
             this.cmbResolucao.Name = "cmbResolucao";
             this.cmbResolucao.Size = new System.Drawing.Size(134, 21);
-            this.cmbResolucao.TabIndex = 54;
+            this.cmbResolucao.TabIndex = 4;
             // 
             // cmbSO
             // 
@@ -114,7 +114,7 @@
             this.cmbSO.Location = new System.Drawing.Point(193, 64);
             this.cmbSO.Name = "cmbSO";
             this.cmbSO.Size = new System.Drawing.Size(134, 21);
-            this.cmbSO.TabIndex = 53;
+            this.cmbSO.TabIndex = 3;
             // 
             // cmbVersao
             // 
@@ -132,7 +132,7 @@
             this.cmbVersao.Location = new System.Drawing.Point(193, 38);
             this.cmbVersao.Name = "cmbVersao";
             this.cmbVersao.Size = new System.Drawing.Size(134, 21);
-            this.cmbVersao.TabIndex = 52;
+            this.cmbVersao.TabIndex = 2;
             // 
             // lblMensagemErro
             // 
@@ -150,7 +150,7 @@
             this.txtMensagemErro.Name = "txtMensagemErro";
             this.txtMensagemErro.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtMensagemErro.Size = new System.Drawing.Size(513, 91);
-            this.txtMensagemErro.TabIndex = 44;
+            this.txtMensagemErro.TabIndex = 11;
             // 
             // lblDescrProblema
             // 
@@ -168,14 +168,14 @@
             this.txtDescrProblema.Name = "txtDescrProblema";
             this.txtDescrProblema.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDescrProblema.Size = new System.Drawing.Size(513, 90);
-            this.txtDescrProblema.TabIndex = 42;
+            this.txtDescrProblema.TabIndex = 10;
             // 
             // txtNomeBanco
             // 
             this.txtNomeBanco.Location = new System.Drawing.Point(507, 65);
             this.txtNomeBanco.Name = "txtNomeBanco";
             this.txtNomeBanco.Size = new System.Drawing.Size(135, 20);
-            this.txtNomeBanco.TabIndex = 38;
+            this.txtNomeBanco.TabIndex = 7;
             // 
             // lblNomeBanco
             // 
@@ -209,7 +209,7 @@
             this.txtSenha.Location = new System.Drawing.Point(507, 118);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(134, 20);
-            this.txtSenha.TabIndex = 41;
+            this.txtSenha.TabIndex = 9;
             // 
             // lblSenha
             // 
@@ -225,7 +225,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(507, 91);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(134, 20);
-            this.txtUsuario.TabIndex = 40;
+            this.txtUsuario.TabIndex = 8;
             // 
             // lblUsuario
             // 
@@ -241,7 +241,7 @@
             this.txtServidor.Location = new System.Drawing.Point(507, 38);
             this.txtServidor.Name = "txtServidor";
             this.txtServidor.Size = new System.Drawing.Size(135, 20);
-            this.txtServidor.TabIndex = 37;
+            this.txtServidor.TabIndex = 6;
             // 
             // lblServidor
             // 
@@ -262,7 +262,7 @@
             this.cmbBanco.Location = new System.Drawing.Point(507, 11);
             this.cmbBanco.Name = "cmbBanco";
             this.cmbBanco.Size = new System.Drawing.Size(134, 21);
-            this.cmbBanco.TabIndex = 35;
+            this.cmbBanco.TabIndex = 5;
             // 
             // lblBanco
             // 
@@ -287,7 +287,7 @@
             this.cmbProduto.Location = new System.Drawing.Point(193, 12);
             this.cmbProduto.Name = "cmbProduto";
             this.cmbProduto.Size = new System.Drawing.Size(134, 21);
-            this.cmbProduto.TabIndex = 33;
+            this.cmbProduto.TabIndex = 1;
             // 
             // lblProduto
             // 

@@ -45,6 +45,7 @@
             this.jiraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ambientesGCADToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jenkinsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kanoahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tDNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +53,6 @@
             this.aluraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.kanoahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             this.melhoriaToolStripMenuItem});
             this.novoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripMenuItem.Image")));
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             // 
             // manutençãoToolStripMenuItem
@@ -84,7 +84,7 @@
             this.rMToolStripMenuItem});
             this.manutençãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("manutençãoToolStripMenuItem.Image")));
             this.manutençãoToolStripMenuItem.Name = "manutençãoToolStripMenuItem";
-            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manutençãoToolStripMenuItem.Text = "Manutenção";
             // 
             // pEPToolStripMenuItem
@@ -107,15 +107,16 @@
             // 
             this.liberaçãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("liberaçãoToolStripMenuItem.Image")));
             this.liberaçãoToolStripMenuItem.Name = "liberaçãoToolStripMenuItem";
-            this.liberaçãoToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.liberaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.liberaçãoToolStripMenuItem.Text = "Liberação";
             this.liberaçãoToolStripMenuItem.Click += new System.EventHandler(this.liberaçãoToolStripMenuItem_Click);
             // 
             // melhoriaToolStripMenuItem
             // 
+            this.melhoriaToolStripMenuItem.Enabled = false;
             this.melhoriaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("melhoriaToolStripMenuItem.Image")));
             this.melhoriaToolStripMenuItem.Name = "melhoriaToolStripMenuItem";
-            this.melhoriaToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.melhoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.melhoriaToolStripMenuItem.Text = "Melhoria";
             this.melhoriaToolStripMenuItem.Click += new System.EventHandler(this.melhoriaToolStripMenuItem_Click);
             // 
@@ -124,14 +125,14 @@
             this.abrirToolStripMenuItem.Enabled = false;
             this.abrirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("abrirToolStripMenuItem.Image")));
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sairToolStripMenuItem.Image")));
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -154,7 +155,7 @@
             // 
             this.pSRToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pSRToolStripMenuItem.Image")));
             this.pSRToolStripMenuItem.Name = "pSRToolStripMenuItem";
-            this.pSRToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pSRToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
             this.pSRToolStripMenuItem.Text = "PSR";
             this.pSRToolStripMenuItem.Click += new System.EventHandler(this.pSRToolStripMenuItem_Click);
             // 
@@ -198,6 +199,14 @@
             this.jenkinsToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.jenkinsToolStripMenuItem.Text = "Jenkins";
             this.jenkinsToolStripMenuItem.Click += new System.EventHandler(this.jenkinsToolStripMenuItem_Click);
+            // 
+            // kanoahToolStripMenuItem
+            // 
+            this.kanoahToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kanoahToolStripMenuItem.Image")));
+            this.kanoahToolStripMenuItem.Name = "kanoahToolStripMenuItem";
+            this.kanoahToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.kanoahToolStripMenuItem.Text = "Kanoah";
+            this.kanoahToolStripMenuItem.Click += new System.EventHandler(this.kanoahToolStripMenuItem_Click);
             // 
             // calendárioToolStripMenuItem
             // 
@@ -260,14 +269,6 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
-            // kanoahToolStripMenuItem
-            // 
-            this.kanoahToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kanoahToolStripMenuItem.Image")));
-            this.kanoahToolStripMenuItem.Name = "kanoahToolStripMenuItem";
-            this.kanoahToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.kanoahToolStripMenuItem.Text = "Kanoah";
-            this.kanoahToolStripMenuItem.Click += new System.EventHandler(this.kanoahToolStripMenuItem_Click);
             // 
             // TelaInicial
             // 

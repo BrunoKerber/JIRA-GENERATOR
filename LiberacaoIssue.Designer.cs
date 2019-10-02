@@ -29,19 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LiberacaoIssue));
-            this.lblReproducao = new System.Windows.Forms.Label();
-            this.txtReproducao = new System.Windows.Forms.TextBox();
-            this.cmbResolucao = new System.Windows.Forms.ComboBox();
-            this.cmbSO = new System.Windows.Forms.ComboBox();
             this.cmbVersao = new System.Windows.Forms.ComboBox();
-            this.lblMensagemErro = new System.Windows.Forms.Label();
-            this.txtMensagemErro = new System.Windows.Forms.TextBox();
-            this.lblDescrProblema = new System.Windows.Forms.Label();
-            this.txtDescrProblema = new System.Windows.Forms.TextBox();
+            this.lblConclusao = new System.Windows.Forms.Label();
+            this.txtConclusao = new System.Windows.Forms.TextBox();
             this.txtNomeBanco = new System.Windows.Forms.TextBox();
             this.lblNomeBanco = new System.Windows.Forms.Label();
-            this.lblResolucao = new System.Windows.Forms.Label();
-            this.lblSo = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -54,56 +46,15 @@
             this.lblProduto = new System.Windows.Forms.Label();
             this.lblVersao = new System.Windows.Forms.Label();
             this.btnCopiar = new System.Windows.Forms.Button();
+            this.cmbResolucao = new System.Windows.Forms.ComboBox();
+            this.cmbSO = new System.Windows.Forms.ComboBox();
+            this.lblResolucao = new System.Windows.Forms.Label();
+            this.lblSo = new System.Windows.Forms.Label();
+            this.lblTesteRealizado = new System.Windows.Forms.Label();
+            this.txtTesteRealizado = new System.Windows.Forms.TextBox();
+            this.lblObservacao = new System.Windows.Forms.Label();
+            this.txtObservacao = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // lblReproducao
-            // 
-            this.lblReproducao.AutoSize = true;
-            this.lblReproducao.Location = new System.Drawing.Point(124, 379);
-            this.lblReproducao.Name = "lblReproducao";
-            this.lblReproducao.Size = new System.Drawing.Size(230, 13);
-            this.lblReproducao.TabIndex = 105;
-            this.lblReproducao.Text = "Passo-a-passo para a reprodução do problema:";
-            // 
-            // txtReproducao
-            // 
-            this.txtReproducao.Location = new System.Drawing.Point(127, 395);
-            this.txtReproducao.Multiline = true;
-            this.txtReproducao.Name = "txtReproducao";
-            this.txtReproducao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtReproducao.Size = new System.Drawing.Size(513, 91);
-            this.txtReproducao.TabIndex = 95;
-            // 
-            // cmbResolucao
-            // 
-            this.cmbResolucao.AutoCompleteCustomSource.AddRange(new string[] {
-            "PEP",
-            "PEP/RM"});
-            this.cmbResolucao.BackColor = System.Drawing.Color.White;
-            this.cmbResolucao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbResolucao.FormattingEnabled = true;
-            this.cmbResolucao.Items.AddRange(new object[] {
-            "1366 x 768"});
-            this.cmbResolucao.Location = new System.Drawing.Point(191, 90);
-            this.cmbResolucao.Name = "cmbResolucao";
-            this.cmbResolucao.Size = new System.Drawing.Size(134, 21);
-            this.cmbResolucao.TabIndex = 104;
-            // 
-            // cmbSO
-            // 
-            this.cmbSO.AutoCompleteCustomSource.AddRange(new string[] {
-            "PEP",
-            "PEP/RM"});
-            this.cmbSO.BackColor = System.Drawing.Color.White;
-            this.cmbSO.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSO.FormattingEnabled = true;
-            this.cmbSO.Items.AddRange(new object[] {
-            "Windows 10 PRO (x64)",
-            "Windows 7 PRO (x64)"});
-            this.cmbSO.Location = new System.Drawing.Point(191, 64);
-            this.cmbSO.Name = "cmbSO";
-            this.cmbSO.Size = new System.Drawing.Size(134, 21);
-            this.cmbSO.TabIndex = 103;
             // 
             // cmbVersao
             // 
@@ -117,54 +68,37 @@
             "12.1.23",
             "12.1.24",
             "12.1.25",
-            "12.1.26"});
+            "12.1.26",
+            "12.1.27"});
             this.cmbVersao.Location = new System.Drawing.Point(191, 38);
             this.cmbVersao.Name = "cmbVersao";
             this.cmbVersao.Size = new System.Drawing.Size(134, 21);
-            this.cmbVersao.TabIndex = 102;
+            this.cmbVersao.TabIndex = 2;
             // 
-            // lblMensagemErro
+            // lblConclusao
             // 
-            this.lblMensagemErro.AutoSize = true;
-            this.lblMensagemErro.Location = new System.Drawing.Point(124, 254);
-            this.lblMensagemErro.Name = "lblMensagemErro";
-            this.lblMensagemErro.Size = new System.Drawing.Size(98, 13);
-            this.lblMensagemErro.TabIndex = 101;
-            this.lblMensagemErro.Text = "Mensagem do erro:";
+            this.lblConclusao.AutoSize = true;
+            this.lblConclusao.Location = new System.Drawing.Point(124, 125);
+            this.lblConclusao.Name = "lblConclusao";
+            this.lblConclusao.Size = new System.Drawing.Size(60, 13);
+            this.lblConclusao.TabIndex = 100;
+            this.lblConclusao.Text = "Conclusão:";
             // 
-            // txtMensagemErro
+            // txtConclusao
             // 
-            this.txtMensagemErro.Location = new System.Drawing.Point(127, 270);
-            this.txtMensagemErro.Multiline = true;
-            this.txtMensagemErro.Name = "txtMensagemErro";
-            this.txtMensagemErro.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMensagemErro.Size = new System.Drawing.Size(513, 91);
-            this.txtMensagemErro.TabIndex = 94;
-            // 
-            // lblDescrProblema
-            // 
-            this.lblDescrProblema.AutoSize = true;
-            this.lblDescrProblema.Location = new System.Drawing.Point(124, 125);
-            this.lblDescrProblema.Name = "lblDescrProblema";
-            this.lblDescrProblema.Size = new System.Drawing.Size(120, 13);
-            this.lblDescrProblema.TabIndex = 100;
-            this.lblDescrProblema.Text = "Descrição do Problema:";
-            // 
-            // txtDescrProblema
-            // 
-            this.txtDescrProblema.Location = new System.Drawing.Point(127, 144);
-            this.txtDescrProblema.Multiline = true;
-            this.txtDescrProblema.Name = "txtDescrProblema";
-            this.txtDescrProblema.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDescrProblema.Size = new System.Drawing.Size(513, 90);
-            this.txtDescrProblema.TabIndex = 92;
+            this.txtConclusao.Location = new System.Drawing.Point(127, 144);
+            this.txtConclusao.Multiline = true;
+            this.txtConclusao.Name = "txtConclusao";
+            this.txtConclusao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtConclusao.Size = new System.Drawing.Size(513, 97);
+            this.txtConclusao.TabIndex = 10;
             // 
             // txtNomeBanco
             // 
             this.txtNomeBanco.Location = new System.Drawing.Point(505, 65);
             this.txtNomeBanco.Name = "txtNomeBanco";
             this.txtNomeBanco.Size = new System.Drawing.Size(135, 20);
-            this.txtNomeBanco.TabIndex = 88;
+            this.txtNomeBanco.TabIndex = 7;
             // 
             // lblNomeBanco
             // 
@@ -175,30 +109,12 @@
             this.lblNomeBanco.TabIndex = 99;
             this.lblNomeBanco.Text = "Nome do Banco:";
             // 
-            // lblResolucao
-            // 
-            this.lblResolucao.AutoSize = true;
-            this.lblResolucao.Location = new System.Drawing.Point(124, 98);
-            this.lblResolucao.Name = "lblResolucao";
-            this.lblResolucao.Size = new System.Drawing.Size(61, 13);
-            this.lblResolucao.TabIndex = 98;
-            this.lblResolucao.Text = "Resolução:";
-            // 
-            // lblSo
-            // 
-            this.lblSo.AutoSize = true;
-            this.lblSo.Location = new System.Drawing.Point(153, 72);
-            this.lblSo.Name = "lblSo";
-            this.lblSo.Size = new System.Drawing.Size(25, 13);
-            this.lblSo.TabIndex = 97;
-            this.lblSo.Text = "SO:";
-            // 
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(505, 118);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(134, 20);
-            this.txtSenha.TabIndex = 91;
+            this.txtSenha.TabIndex = 9;
             // 
             // lblSenha
             // 
@@ -214,7 +130,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(505, 91);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(134, 20);
-            this.txtUsuario.TabIndex = 90;
+            this.txtUsuario.TabIndex = 8;
             // 
             // lblUsuario
             // 
@@ -230,7 +146,7 @@
             this.txtServidor.Location = new System.Drawing.Point(505, 38);
             this.txtServidor.Name = "txtServidor";
             this.txtServidor.Size = new System.Drawing.Size(135, 20);
-            this.txtServidor.TabIndex = 87;
+            this.txtServidor.TabIndex = 6;
             // 
             // lblServidor
             // 
@@ -251,7 +167,7 @@
             this.cmbBanco.Location = new System.Drawing.Point(505, 11);
             this.cmbBanco.Name = "cmbBanco";
             this.cmbBanco.Size = new System.Drawing.Size(134, 21);
-            this.cmbBanco.TabIndex = 85;
+            this.cmbBanco.TabIndex = 5;
             // 
             // lblBanco
             // 
@@ -272,11 +188,12 @@
             this.cmbProduto.FormattingEnabled = true;
             this.cmbProduto.Items.AddRange(new object[] {
             "PEP",
-            "PEP/RM"});
+            "PEP/RM",
+            "RM"});
             this.cmbProduto.Location = new System.Drawing.Point(191, 12);
             this.cmbProduto.Name = "cmbProduto";
             this.cmbProduto.Size = new System.Drawing.Size(134, 21);
-            this.cmbProduto.TabIndex = 83;
+            this.cmbProduto.TabIndex = 1;
             // 
             // lblProduto
             // 
@@ -299,13 +216,115 @@
             // btnCopiar
             // 
             this.btnCopiar.BackColor = System.Drawing.Color.White;
-            this.btnCopiar.Location = new System.Drawing.Point(325, 506);
+            this.btnCopiar.Location = new System.Drawing.Point(304, 506);
             this.btnCopiar.Name = "btnCopiar";
             this.btnCopiar.Size = new System.Drawing.Size(116, 23);
-            this.btnCopiar.TabIndex = 81;
+            this.btnCopiar.TabIndex = 13;
             this.btnCopiar.Text = "COPIAR";
             this.btnCopiar.UseVisualStyleBackColor = false;
             this.btnCopiar.Click += new System.EventHandler(this.btnCopiar_Click);
+            // 
+            // cmbResolucao
+            // 
+            this.cmbResolucao.AutoCompleteCustomSource.AddRange(new string[] {
+            "PEP",
+            "PEP/RM"});
+            this.cmbResolucao.BackColor = System.Drawing.Color.White;
+            this.cmbResolucao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbResolucao.FormattingEnabled = true;
+            this.cmbResolucao.Items.AddRange(new object[] {
+            "800 x 600",
+            "1024 x 768",
+            "1280 x 600",
+            "1280 x 720",
+            "1280 x 768",
+            "1280 x 1024",
+            "1360 x 768",
+            "1366 x 768",
+            "1400 x 1050",
+            "1440 x 900",
+            "1600 x 900",
+            "168 x 1050",
+            "1440 x 900",
+            "1600 x 900",
+            "1680 x 1050",
+            "1920 x 1080"});
+            this.cmbResolucao.Location = new System.Drawing.Point(191, 90);
+            this.cmbResolucao.Name = "cmbResolucao";
+            this.cmbResolucao.Size = new System.Drawing.Size(134, 21);
+            this.cmbResolucao.TabIndex = 4;
+            // 
+            // cmbSO
+            // 
+            this.cmbSO.AutoCompleteCustomSource.AddRange(new string[] {
+            "PEP",
+            "PEP/RM"});
+            this.cmbSO.BackColor = System.Drawing.Color.White;
+            this.cmbSO.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSO.FormattingEnabled = true;
+            this.cmbSO.Items.AddRange(new object[] {
+            "Windows 7",
+            "Windows 8",
+            "Windows 8.1",
+            "Windows 10"});
+            this.cmbSO.Location = new System.Drawing.Point(191, 64);
+            this.cmbSO.Name = "cmbSO";
+            this.cmbSO.Size = new System.Drawing.Size(134, 21);
+            this.cmbSO.TabIndex = 3;
+            // 
+            // lblResolucao
+            // 
+            this.lblResolucao.AutoSize = true;
+            this.lblResolucao.Location = new System.Drawing.Point(124, 98);
+            this.lblResolucao.Name = "lblResolucao";
+            this.lblResolucao.Size = new System.Drawing.Size(61, 13);
+            this.lblResolucao.TabIndex = 107;
+            this.lblResolucao.Text = "Resolução:";
+            // 
+            // lblSo
+            // 
+            this.lblSo.AutoSize = true;
+            this.lblSo.Location = new System.Drawing.Point(153, 72);
+            this.lblSo.Name = "lblSo";
+            this.lblSo.Size = new System.Drawing.Size(25, 13);
+            this.lblSo.TabIndex = 106;
+            this.lblSo.Text = "SO:";
+            // 
+            // lblTesteRealizado
+            // 
+            this.lblTesteRealizado.AutoSize = true;
+            this.lblTesteRealizado.Location = new System.Drawing.Point(125, 255);
+            this.lblTesteRealizado.Name = "lblTesteRealizado";
+            this.lblTesteRealizado.Size = new System.Drawing.Size(87, 13);
+            this.lblTesteRealizado.TabIndex = 111;
+            this.lblTesteRealizado.Text = "Teste Realizado:";
+            // 
+            // txtTesteRealizado
+            // 
+            this.txtTesteRealizado.Location = new System.Drawing.Point(126, 274);
+            this.txtTesteRealizado.Multiline = true;
+            this.txtTesteRealizado.Name = "txtTesteRealizado";
+            this.txtTesteRealizado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtTesteRealizado.Size = new System.Drawing.Size(513, 94);
+            this.txtTesteRealizado.TabIndex = 11;
+            // 
+            // lblObservacao
+            // 
+            this.lblObservacao.AutoSize = true;
+            this.lblObservacao.Location = new System.Drawing.Point(123, 384);
+            this.lblObservacao.Name = "lblObservacao";
+            this.lblObservacao.Size = new System.Drawing.Size(68, 13);
+            this.lblObservacao.TabIndex = 113;
+            this.lblObservacao.Text = "Observação:";
+            // 
+            // txtObservacao
+            // 
+            this.txtObservacao.Location = new System.Drawing.Point(124, 403);
+            this.txtObservacao.Multiline = true;
+            this.txtObservacao.Name = "txtObservacao";
+            this.txtObservacao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtObservacao.Size = new System.Drawing.Size(513, 94);
+            this.txtObservacao.TabIndex = 12;
             // 
             // LiberacaoIssue
             // 
@@ -313,19 +332,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(764, 541);
-            this.Controls.Add(this.lblReproducao);
-            this.Controls.Add(this.txtReproducao);
+            this.Controls.Add(this.lblObservacao);
+            this.Controls.Add(this.txtObservacao);
+            this.Controls.Add(this.lblTesteRealizado);
+            this.Controls.Add(this.txtTesteRealizado);
             this.Controls.Add(this.cmbResolucao);
             this.Controls.Add(this.cmbSO);
-            this.Controls.Add(this.cmbVersao);
-            this.Controls.Add(this.lblMensagemErro);
-            this.Controls.Add(this.txtMensagemErro);
-            this.Controls.Add(this.lblDescrProblema);
-            this.Controls.Add(this.txtDescrProblema);
-            this.Controls.Add(this.txtNomeBanco);
-            this.Controls.Add(this.lblNomeBanco);
             this.Controls.Add(this.lblResolucao);
             this.Controls.Add(this.lblSo);
+            this.Controls.Add(this.cmbVersao);
+            this.Controls.Add(this.lblConclusao);
+            this.Controls.Add(this.txtConclusao);
+            this.Controls.Add(this.txtNomeBanco);
+            this.Controls.Add(this.lblNomeBanco);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.txtUsuario);
@@ -350,20 +369,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblReproducao;
-        private System.Windows.Forms.TextBox txtReproducao;
-        private System.Windows.Forms.ComboBox cmbResolucao;
-        private System.Windows.Forms.ComboBox cmbSO;
         private System.Windows.Forms.ComboBox cmbVersao;
-        private System.Windows.Forms.Label lblMensagemErro;
-        private System.Windows.Forms.TextBox txtMensagemErro;
-        private System.Windows.Forms.Label lblDescrProblema;
-        private System.Windows.Forms.TextBox txtDescrProblema;
+        private System.Windows.Forms.Label lblConclusao;
+        private System.Windows.Forms.TextBox txtConclusao;
         private System.Windows.Forms.TextBox txtNomeBanco;
         private System.Windows.Forms.Label lblNomeBanco;
-        private System.Windows.Forms.Label lblResolucao;
-        private System.Windows.Forms.Label lblSo;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtUsuario;
@@ -376,5 +386,13 @@
         private System.Windows.Forms.Label lblProduto;
         private System.Windows.Forms.Label lblVersao;
         private System.Windows.Forms.Button btnCopiar;
+        private System.Windows.Forms.ComboBox cmbResolucao;
+        private System.Windows.Forms.ComboBox cmbSO;
+        private System.Windows.Forms.Label lblResolucao;
+        private System.Windows.Forms.Label lblSo;
+        private System.Windows.Forms.Label lblTesteRealizado;
+        private System.Windows.Forms.TextBox txtTesteRealizado;
+        private System.Windows.Forms.Label lblObservacao;
+        private System.Windows.Forms.TextBox txtObservacao;
     }
 }
